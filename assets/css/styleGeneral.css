@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+#letras{
+    font-family: 'Satisfy', cursive;
+}
+
+:root {
+ --color-azuCla: #18206f;
+ --color-azuOs: #17255a;
+ --color-rojo: #bd1e1e;
+ --color-rojoCla: #d88373;
+ --color-rojoCla2: #f5e2c8;
+}
