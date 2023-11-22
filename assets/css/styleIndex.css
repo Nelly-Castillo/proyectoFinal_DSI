@@ -46,7 +46,7 @@ body {
     border-radius: 50%;
 }
 
-.cajausername{
+.boxusername{
     width: 368px;
     height: 40px;
     font-weight: bold;
@@ -78,7 +78,7 @@ body {
     display: flex;
 }
 
-.cajaitems2{
+.boxitems2{
     display: inline-block;
 }
 
@@ -87,7 +87,7 @@ i{
     padding: 8px;
 }
 
-.cajaitems2marcador, .carafeliz, .opcion {
+.boxitems2marcador, .carafeliz, .opcion, .botonvertodo .columna2{
     margin-left: auto;
 }
 
@@ -96,7 +96,7 @@ input {
     justify-content: center;
 }
 
-.cajadecomentarios{
+.boxdecomentarios{
     display: flex;
     justify-content: center;
 }
@@ -114,7 +114,7 @@ button {
     align-items: center;
 }
 
-.cajafotoperfil{
+.boxfotoperfil{
     width: 65px;
     height: 65px;
     display: flex;
@@ -126,7 +126,7 @@ button {
     border-radius: 50%;
 }
 
-.cajausuarios{
+.boxusuarios{
     padding: 4px;
     display: flex;
     flex-direction: column;
@@ -134,6 +134,84 @@ button {
     justify-content: center;
 }
 
-.cajausuarios p {
+.boxusuarios p, .boxcambio p, .boxsugerencias p, .boxtodo p{
     margin-bottom: 0rem;
+}
+
+.boxusuarios, .boxcambio, .boxdenombre, .boxdeseguir{
+    margin-left: 1rem;
+}
+
+.boxcambio ,  .boxdeseguir {
+    color: #0095f6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.boxsugerencia{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxsugerencias{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boxsugerencia p{
+    font-size: 20px;
+}
+
+.vertodo {
+    margin-left: 10px;
+}
+.parte1{
+    display: flex;
+    flex-direction: row;
+    color: gray;
+}
+
+.boxprueba{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sugeridos {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.boxnombre{
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.boxtodo{
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#cont-general{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
