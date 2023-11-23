@@ -21,16 +21,16 @@ CREATE TABLE IF NOT EXISTS 'galeria'(
 )
 
 INSERT INTO 'usuario' ('usuario_id', 'nombre_usuario', 'contrasena', 'fotoPerfil') VALUES
-('1','tlacuachito', 'wAAAHHH', ''),
-('2','chabelo_oficial', 'tacosDECACA', ''),
-('3','karloPaz', 'supermanburro', ''),
-('4','juanito_mecanico', 'brumbrumCarro', ''),
-('5','informaticauaq', 'troyanosazulesss', ''),
-('6','arcadefire','kettles', ''),
-('7','doritos', 'doritosincognitaPRO', ''),
-('8','ternurines', 'babalala', ''),
-('9','alex_vargas', 'señorsecretarioacademico', ''),
-('10','Stitch', 'experimento626', '');
+('1','tlacuachito', 'wAAAHHH', 'tlacuachep'),
+('2','chabelo_oficial', 'tacosDECACA', 'chabello'),
+('3','karloPaz', 'supermanburro', 'omori'),
+('4','juanito_mecanico', 'brumbrumCarro', 'mecanico'),
+('5','informaticauaq', 'troyanosazulesss', 'fif'),
+('6','arcadefire','kettles', 'arcfir'),
+('7','doritos', 'doritosincognitaPRO', 'doritos'),
+('8','ternurines', 'babalala', 'ternurines'),
+('9','alex_vargas', 'señorsecretarioacademico', 'hacker'),
+('10','Stitch', 'experimento626', 'stitch');
 
 INSERT INTO 'seguidores' ('usuario_id','id_seguido') VALUES 
 ('1','1'),
