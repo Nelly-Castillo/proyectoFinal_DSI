@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="assets/css/medias.css">
     <!-- favicon -->
     <link rel="icon" type="image/svg" href="assets/img/icon.svg" />
-    <script type="text/javascript" src="assets/js/main.js"></script>
     <title>Instagram</title>
 </head>
 <body>
@@ -43,7 +42,7 @@
                             </div>
                             <div class="opcion">
                                 <button class="puntos">
-                                    <i id="iconos" class="bi bi-three-dots"></i>
+                                    <i class="iconos bi bi-three-dots"></i>
                                 </button>
                             </div>
                         </div>
@@ -53,16 +52,16 @@
                     </div>
                     <div class="items2">
                         <button class="boxitems2">
-                            <i id="iconos" class="bi bi-heart"></i>
-                        </button class="boxitems2">
-                        <button class="boxitems2">
-                            <i id="iconos" class="bi bi-chat-right"></i>
+                            <i class="iconos bi bi-heart" id="megusta"></i>
                         </button>
                         <button class="boxitems2">
-                            <i id="iconos" class="bi bi-send"></i>
+                            <i class="iconos bi bi-chat-right"></i>
+                        </button>
+                        <button class="boxitems2">
+                            <i class="iconos bi bi-send"></i>
                         </button>
                         <button class="boxitems2marcador">
-                            <i id="iconos" class="bi bi-bookmark"></i>
+                            <i class="iconos bi bi-bookmark"></i>
                         </button>
                     </div>
                     <div class="comentarios">
@@ -71,7 +70,7 @@
                         </div>
                         <div class="carafeliz">
                             <button class="boxitems2">
-                                <i  id="iconos" class="bi bi-emoji-smile"></i>
+                                <i  class="iconos bi bi-emoji-smile"></i>
                             </button>
                         </div>
                     </div>
@@ -134,6 +133,13 @@
         <footer  id="cont-botton">
         </footer>
     </main>
-    <script src="js/main.js"></script>
+
+    <!-- Los contenedores de los modales se agregan en todas las paginas menos login -->
+    <div id="contenedorSubirFoto" class="modal">
+        
+    </div>
 </body>
+
 </html>
+<!--para evitar problemas de carga -->
+<script src="assets/js/main.js"></script>
