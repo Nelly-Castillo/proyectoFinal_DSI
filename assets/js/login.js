@@ -1,5 +1,5 @@
 window.addEventListener("load", function(){
-    let boton_login = document.getElementById("boton-de-login");
+    const boton_login = document.getElementById("boton-de-login");
     boton_login.addEventListener("submit", (e) => {
         e.preventDefault();
         

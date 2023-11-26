@@ -15,3 +15,15 @@
  --color-rojoCla: #d88373;
  --color-rojoCla2: #f5e2c8;
 }
+
+.modal{
+    display:none;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+}

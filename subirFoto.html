@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- iconos -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styleGeneral.css">
+    <link rel="stylesheet" href="assets/css/styleSubirFoto.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="assets/img/icon.svg" />
+    <title>Instagram</title>
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        Arrastra las fotos aquí
+        <input type="file" name="fileToUpload" id="subir-archivo" value="Seleccionar de la computadora">
+        <input type="submit" id="boton-compartir" value="Compartir" name="submit">
+    </form>
+</body>
+</html>
