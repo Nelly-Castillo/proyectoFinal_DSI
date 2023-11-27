@@ -1,6 +1,14 @@
 @media (max-width: 768px) {
-    #cont-perfiles {
+    #cont-perfiles, .box-text, .box-letras {
       display: none;
     }
+    /* .box-botNav, .icon-inst{
+      justify-content: center;
+    } */
 } 
-  
+
+@media (min-width: 768px) {
+  .icon-inst{
+    display: none;
+  }
+}
