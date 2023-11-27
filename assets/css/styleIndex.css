@@ -8,10 +8,13 @@ main {
     width: 100%;
     height: 100%;
 }
+p, i{
+    color: var(--color-azuOs);
+}
 .perfiles {
     width: 534px;
     height: auto;
-    border: 1px solid #dfdfdf;
+    border: 1px solid;
     display: flex;
     border-radius: 5px;
     flex-direction: column;
@@ -80,7 +83,7 @@ main {
 .items2, .comentarios{
     background-color: rgb(255, 255, 255);
     padding: 8px 5px;
-    border: 1px solid #dfdfdf;
+    border: 1px solid ;
     display: flex;
 }
 
@@ -138,6 +141,7 @@ button {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    /* color: var(--color-azuOs) ; */
 }
 
 .boxusuarios p, .boxcambio p, .boxsugerencias p, .boxtodo p, .box-text p{
@@ -149,9 +153,8 @@ button {
 }
 
 .boxcambio ,  .boxdeseguir {
-    color: #0095f6;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     text-align: center;
 }
 
@@ -170,6 +173,9 @@ button {
     align-items: center;
 }
 
+.seguir, .cambiar{
+    color: var(--color-rojoCla);
+}
 
 .boxsugerencia p{
     font-size: 20px;
@@ -181,7 +187,7 @@ button {
 .parte1{
     display: flex;
     flex-direction: row;
-    color: gray;
+    /* color: var(--color-azuCla); */
 }
 
 .boxprueba{
@@ -235,9 +241,10 @@ button {
     height: 100%;
     display: flex;
     flex-direction: column;
-    border-right: 2px solid  #0095f6;
+    border-right: 2px solid;
     margin-right: 30px;
     position: fixed;
+    /* color: var(--color-azuOs); */
 }
 
 .box-letras{
@@ -246,34 +253,51 @@ button {
     padding: 25px 12px;
     margin-bottom:  20px;
 }
-.box-botNav{
+.box-botNav, .icon-inst{
     display: flex;
     width: 100%;
     padding: 12px;
     margin: 2px;
-    align-items: center;
+    /* background-color: none; */
 }
-.box-icon, .boxt-text{
-    display: inline-block;
-}
-
-.box-botNav i {
+/* .box-icon, .boxt-text{
+    display: inline-flex;
+} */
+/* .box-botNav i {
     padding: 0px;
-    font-size: 23px;
-}
-.box-botNav p{
+    font-size: 24px;
+} */
+.box-text p{
     font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0;
+    color: var(--color-azuOs);
 }
 
-.box-icon {
-    display: flex;
+.box-icon img{
+    /* display: flex; */
+    /* fill:#18206f; */
     width: 24px;
     height: 24px;
+    margin-right: 8px;
 }
 
-.perfilNav img {
+.perfilNav {
     border-radius: 50%;
     height: 23px;
     width: 23px;
+    display: flex;
 }
 
+.botonNav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    /* justify-content: center; */
+}
+
+.perfiles,.items2, .comentarios, #nav-lateral{
+    border-color: rgba(23, 32, 110, 0.3);
+}
