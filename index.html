@@ -92,7 +92,7 @@
                 </button>
             </div>
             <div class="box-botNav">
-                <button onclick="window.location.href='login.html'">
+                <button onclick="mostrarCrear()">
                     <div class="box-icon">
                         <i class="bi bi-plus-square"></i>
                     </div>
@@ -227,7 +227,19 @@
 
     <!-- Los contenedores de los modales se agregan en todas las paginas menos login -->
     <div id="contenedorSubirFoto" class="modal">
-        
+        <div id="divFormCrear">
+            <form id="formCrear" action="upload.php" method="post" enctype="multipart/form-data">
+                Arrastra las fotos aquí
+                <input type="file" name="fileToUpload" id="subir-archivo" value="Seleccionar de la computadora">
+                <input type="submit" id="boton-compartir" value="Compartir" name="submit">
+            </form>
+        </div>
+    </div>
+
+    <div id="seguidores" class="modal">
+        <div id="containerSeg">
+            jsakjhdkajshdajsh
+        </div>
     </div>
 </body>
 
