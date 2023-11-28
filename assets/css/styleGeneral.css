@@ -6,6 +6,7 @@
 }
 #letras{
     font-family: 'Satisfy', cursive;
+    color: var(--color-azuOs);
 }
 
 :root {
@@ -18,7 +19,7 @@
 
 .modal{
     display:none;
-    background: rgba(0, 0, 0, 0.9);
+    background:  rgba(23, 32, 110, 0.9);
     color: #fff;
     position: fixed;
     top: 0;
