@@ -9,6 +9,10 @@
     color: var(--color-azuOs);
 }
 
+p, i{
+    color: var(--color-azuOs);
+}
+
 :root {
  --color-azuCla: #18206f;
  --color-azuOs: #17255a;
@@ -65,3 +69,71 @@
     font-size: 20px;
     color: black;
 }
+
+/* Nav */
+#nav-lateral {
+    padding: 12px 8px;
+    width: 15%;
+    border-right: 2px solid;
+    margin-right: 30px;
+    position: fixed;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-color: rgba(23, 32, 110, 0.3);
+}
+
+.box-letras{
+    width: 100%;
+    height: auto;
+    padding: 25px 12px;
+    margin-bottom:  20px;
+}
+
+.box-botNav, .icon-inst{
+    margin: 2px;
+    padding: 12px;
+}
+.box-botNav, .icon-inst, .botonNav{
+    width: 100%;
+    display: flex;
+}
+.botonNav {
+    align-items: center;
+    height: 25px;
+}
+
+.box-icon i{
+    padding: 0px;
+    margin-right: 8px;
+    font-size: 26px;
+}
+
+.box-icon img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.box-text p{
+    font-size: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 0rem;
+}
+
+.perfilNav{
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+    display: flex;
+}
+
+button {
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+/* .box-botNav:hover, .botonNav:hover{
+    background-color: rgba(217, 132, 115, 0.4);
+} */
