@@ -1,4 +1,7 @@
 const corazon = document.getElementById("megusta");
+const contSubirFoto = document.getElementById("contenedorSubirFoto")
+const divFormCrear = document.getElementById("divFormCrear");
+
 corazon.addEventListener("click", (e) => {
     darLike(e);
     // console.log('Se dió like');
@@ -9,8 +12,8 @@ function darLike(evento){
     evento.target.classList.toggle("bi-heart");
 }
 
-// Esto es para cargar el modal de subir fotos
-document.addEventListener("DOMContentLoaded", function () {
-    const modalFotos = document.getElementById('contenedorSubirFoto');
-    modalFotos.innerHTML = '<object type="text/html" data="subirFoto.html" ></object>';
-});
+
+function mostrarCrear(){
+    contSubirFoto.style.display="flex";
+    console.log("se muestra el modal de crear");
+}
