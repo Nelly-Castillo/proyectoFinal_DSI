@@ -30,9 +30,7 @@
 
 #divFormCrear{
     display: flex;
-    position: absolute;
-    top: 100;
-    left: 100;
+    justify-content: center;
     background-color: white;
     width: 500px;
     height: 600px;
