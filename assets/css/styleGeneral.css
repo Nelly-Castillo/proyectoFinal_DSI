@@ -26,14 +26,24 @@
     height: 100vh;
     width: 100vw;
     transition: all .5s;
+    align-items: center;
+    justify-content: center;
+}
+
+.bi-x{
+    display: block;
+    justify-content:right;
+    z-index: 100;
+    position: relative;
+    cursor: pointer;
+    color: white;
 }
 
 #divFormCrear{
     display: flex;
-    justify-content: center;
     background-color: white;
-    width: 500px;
-    height: 600px;
+    width: 525px;
+    height: 568px;
     color: black;
     z-index: 100;
 }

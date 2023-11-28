@@ -17,3 +17,7 @@ function mostrarCrear(){
     contSubirFoto.style.display="flex";
     console.log("se muestra el modal de crear");
 }
+
+function cerrarModal(){
+    contSubirFoto.style.display="none";
+}

@@ -235,6 +235,10 @@
 
     <!-- Los contenedores de los modales se agregan en todas las paginas menos login -->
     <div id="contenedorSubirFoto" class="modal">
+        <i class="bi bi-x" onclick="cerrarModal()"></i>
+        <div class="headerModal">
+            Crea una nueva publicación
+        </div>
         <div id="divFormCrear">
             <form id="formCrear" action="upload.php" method="post" enctype="multipart/form-data">
                 Arrastra las fotos aquí
