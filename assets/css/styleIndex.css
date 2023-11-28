@@ -1,92 +1,3 @@
-
-body {
-    width: 100%;
-}
-
-main {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-p, i{
-    color: var(--color-azuOs);
-}
-.perfiles {
-    width: 534px;
-    height: auto;
-    border: 1px solid;
-    display: flex;
-    border-radius: 5px;
-    flex-direction: column;
-    margin-bottom: 140px;
-}
-
-.titulo{
-    width: 100%;
-    justify-content: center;
-}
-
-.titulo, .infoperfil{
-    /* height: 60px; */
-    display: flex;
-    /* justify-content: space-between; */
-    /* padding-left: 20px; */
-    align-items: center;
-}
-
-.infoperfil{
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    padding: 0% 5%;
-    margin: 10px 0px;
-}
-
-.imagenpost{
-    width: 42px;
-    height: 42px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.post{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-
-.boxusername{
-    width: 368px;
-    height: 40px;
-    font-weight: bold;
-    font-size: 14px;
-    margin-left: 10px;
-    display: flex;
-}
-.username{
-    width: 348px;
-    height: 15px;
-    margin-top: 13px;
-    display: flex;
-    align-items: center;
-}
-.opcion{
-    width: 40px;
-    height: 40px;
-}
-
-.fotopost{
-    width: 100%;
-    height: auto;
-}
-
-.items2, .comentarios{
-    background-color: rgb(255, 255, 255);
-    padding: 8px 5px;
-    border: 1px solid ;
-    display: flex;
-}
-
 .boxitems2{
     display: inline-block;
 }
@@ -96,85 +7,21 @@ i{
     padding: 8px;
 }
 
-.boxitems2marcador, .carafeliz, .opcion, .botonvertodo .columna2{
-    margin-left: auto;
-}
-
-input {
-    border: none;
-    justify-content: center;
-}
-
-.boxdecomentarios{
-    display: flex;
-    justify-content: center;
-}
-
-button {
-    background-color: rgb(255, 255, 255);
-    border: none;
-}
-
 .miperfil{
-    width: 100%;
     height: 66px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .boxfotoperfil{
     width: 65px;
     height: 65px;
-    display: flex;
-    justify-content: center;
 }
 .fotoperfil2{
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-}
-
-.boxusuarios{
-    padding: 4px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    /* color: var(--color-azuOs) ; */
-}
-
-.boxusuarios p, .boxcambio p, .boxsugerencias p, .boxtodo p, .box-text p{
-    margin-bottom: 0rem;
-}
-
-.boxusuarios, .boxcambio, .boxdenombre, .boxdeseguir{
-    margin-left: 1rem;
-}
-
-.boxcambio ,  .boxdeseguir {
-    display: flex;
-    justify-content: center; 
-    text-align: center;
-}
-
-.boxsugerencia{
-    display: flex;
-    flex-direction: column;
 }
 
 .boxsugerencias{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: auto;
     padding: 6px;
-    justify-content: center;
-    align-items: center;
-}
-
-.seguir, .cambiar{
-    color: var(--color-rojoCla);
 }
 
 .boxsugerencia p{
@@ -184,120 +31,200 @@ button {
 .vertodo {
     margin-left: 10px;
 }
-.parte1{
-    display: flex;
-    flex-direction: row;
-    /* color: var(--color-azuCla); */
-}
-
-.boxprueba{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .sugeridos {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
-    display: flex;
-}
-
-.boxnombre{
-    padding: 4px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
 }
 
 .boxtodo{
-    width: auto;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 #cont-general{
-    display: flex;
-    flex-direction: row;
     align-items: stretch;
-    flex-wrap: nowrap;
     justify-content: space-evenly;
-    /* margin-top: 40px; */
     margin-left: 250px;
     width: 85%;
+}
+
+#nav-lateral{
+    padding: 12px 8px;
+    width: 15%;
+    border-right: 2px solid;
+    margin-right: 30px;
+    position: fixed;
+    border-color: rgba(23, 32, 110, 0.3)
+}
+
+/* .box-botNav:hover, .botonNav:hover{
+    background-color: rgba(217, 132, 115, 0.4);
+} */
+
+.box-letras{
+    padding: 25px 12px;
+    margin-bottom:  20px;
+}
+
+.box-text p{
+    font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.box-icon img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.perfilNav{
+    border-radius: 50%;
+    height: 23px;
+    width: 23px;
+}
+
+.botonNav{
+    height: 25px;
+}
+
+/* Conjuntos */
+
+body, main, .titulo, .fotopost, .miperfil, .box-letras, .box-botNav, .icon-inst, .botonNav {
+    width: 100%;
+}
+
+.boxsugerencias, .boxtodo{
+    width: auto;
+}
+
+main, #nav-lateral {
+    height: 100%;
+}
+
+.box-letras, .boxsugerencias, .fotopost, .perfiles{
+    height: auto;
+}
+
+button, .items2, .comentarios{
+    background-color: rgb(255, 255, 255);
+}
+
+main, .perfiles, .titulo, .infoperfil, .imagenpost, .boxusername, .username, .items2, .comentarios, .boxdecomentarios, .miperfil, .boxfotoperfil, .boxusuarios, .boxcambio ,  .boxdesegui, .boxsugerencia, .boxsugerencias, .boxprueba, .parte1, .sugeridos, .boxnombre, .boxtodo, #cont-general, #nav-lateral, .box-botNav, .icon-inst, .perfilNav, .botonNav{
+    display: flex;
+}
+
+.perfiles, .boxusuarios, .boxsugerencia, .boxprueba, .boxnombre, #nav-lateral {
+    flex-direction: column;
+}
+
+.parte1, .boxsugerencias, #cont-general{
+    flex-direction: row;
+}
+
+.boxusuarios, .boxnombre, #cont-general{
+    flex-wrap: nowrap;
+}
+
+.titulo, .infoperfil, .imagenpost, input, .boxdecomentarios, .miperfil, .boxfotoperfil, .boxusuarios, .boxcambio ,  .boxdeseguir, .boxsugerencias, .boxprueba, .boxnombre, .boxtodo{
+    justify-content: center;
+}
+
+.titulo, .infoperfil, .imagenpost, .username, .miperfil, .boxsugerencias, .boxtodo, .botonNav {
+    align-items: center;
+}
+
+.box-botNav, .icon-inst{
+    margin: 2px;
+    padding: 12px;
 }
 
 #cont-publicaciones, #cont-perfiles{
     margin-top: 40px;
 }
 
-#nav-lateral{
-    padding: 12px 8px;
-    width: 15%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border-right: 2px solid;
-    margin-right: 30px;
-    position: fixed;
-    /* color: var(--color-azuOs); */
+.boxusuarios p, .boxcambio p, .boxsugerencias p, .boxtodo p, .box-text p{
+    margin-bottom: 0rem;
 }
 
-.box-letras{
-    width: 100%;
-    height: auto;
-    padding: 25px 12px;
-    margin-bottom:  20px;
+.boxitems2marcador, .carafeliz, .opcion, .botonvertodo .columna2{
+    margin-left: auto;
 }
-.box-botNav, .icon-inst{
-    display: flex;
-    width: 100%;
-    padding: 12px;
-    margin: 2px;
-    /* background-color: none; */
+
+.boxusuarios, .boxcambio, .boxdenombre, .boxdeseguir{
+    margin-left: 1rem;
 }
-/* .box-icon, .boxt-text{
-    display: inline-flex;
-} */
-/* .box-botNav i {
-    padding: 0px;
-    font-size: 24px;
-} */
-.box-text p{
-    font-size: 15px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin: 0;
+
+input, button {
+    border: none;
+}
+
+.perfiles, .items2, .comentarios{
+    border: 1px solid;
+}
+
+.perfiles, .items2, .comentarios, #nav-lateral{
+    border-color: rgba(23, 32, 110, 0.3);
+}
+
+.post, .fotoperfil2, .sugeridos{
+    border-radius: 50%;
+}
+
+.boxnombre, .boxusuarios{
+    padding: 4px;
+}
+
+.boxcambio ,  .boxdeseguir {
+    text-align: center;
+}
+
+p, i, .box-text p{
     color: var(--color-azuOs);
 }
 
-.box-icon img{
-    /* display: flex; */
-    /* fill:#18206f; */
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+.seguir, .cambiar{
+    color: var(--color-rojoCla);
 }
 
-.perfilNav {
-    border-radius: 50%;
-    height: 23px;
-    width: 23px;
-    display: flex;
+.perfiles{
+    width: 534px;
+    border-radius: 5px;
+    margin-bottom: 140px;
 }
 
-.botonNav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 25px;
-    /* justify-content: center; */
+.infoperfil{
+    width: 90%;
+    padding: 0% 5%;
+    margin: 10px 0px;
 }
 
-.perfiles,.items2, .comentarios, #nav-lateral{
-    border-color: rgba(23, 32, 110, 0.3);
+.imagenpost{
+    width: 42px;
+    height: 42px;
+}
+.post{
+    width: 32px;
+    height: 32px;
+}
+
+.boxusername{
+    width: 368px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.username{
+    width: 348px;
+    height: 15px;
+    margin-top: 13px;
+}
+.opcion{
+    width: 40px;
+    height: 40px;
+}
+
+.items2, .comentarios{
+    padding: 8px 5px;
 }
