@@ -1,7 +1,8 @@
 const corazon = document.getElementById("megusta");
 const contSubirFoto = document.getElementById("contenedorSubirFoto")
 const divFormCrear = document.getElementById("divFormCrear");
-const preview = document.getElementsByClassName("preview")
+const preview = document.getElementsByClassName("preview");
+const contenedorSeguidores = document.getElementById("contenedorSeguidores");
 
 corazon.addEventListener("click", (e) => {
     darLike(e);
@@ -19,8 +20,20 @@ function mostrarCrear(){
     console.log("se muestra el modal de crear");
 }
 
-function cerrarModal(){
+function cerrarModalCrear(){
     contSubirFoto.style.display="none";
+}
+
+function modalSeguidores(){
+    contenedorSeguidores.style.display="flex";
+}
+
+function cerrarSgr(){
+    contenedorSeguidores.style.display="none";
+}
+
+function eliminarSeguidor(){
+    
 }
 
 // para subir archivos

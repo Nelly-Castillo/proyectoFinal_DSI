@@ -41,6 +41,7 @@ p, i{
     position: relative;
     cursor: pointer;
     color: white;
+    font-size: 40px;
 }
 
 #contClose{
@@ -99,13 +100,17 @@ p, i{
     flex-flow: column;
 }
 
-#containerSeg{
-    display:contents;
-    position: relative;
-    background-color: white;
-    padding: 100px;
+#divSeguidores{
     font-size: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
     color: black;
+    z-index: 100;
 }
 
 .preview img{
@@ -178,3 +183,44 @@ button {
 /* .box-botNav:hover, .botonNav:hover{
     background-color: rgba(217, 132, 115, 0.4);
 } */
+
+.img-lista{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+}
+
+.seguidores:hover{
+    cursor:pointer;
+}
+
+.people{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 14px;
+    padding: 8px 16px;
+    color: black;
+}
+
+.del-seg{
+    width: 89px;
+    height: 32px;
+    font-weight: bold;
+}
+
+.nombresSeg{
+    width: 200px;
+    margin-bottom: 0;
+    flex-direction: column;
+}
+
+.img-redonda{
+    width: 54px;
+    height: 54px;
+    justify-content: center;
+}
+
+.del-seg{
+    background-color: #EFEFEF;
+    border-radius: 10%;
+}
