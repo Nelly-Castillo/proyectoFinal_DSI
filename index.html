@@ -226,11 +226,35 @@
         </div>
     </div>
 
-    <div id="seguidores" class="git modal">
-        <div id="containerSeg">
-            jsakjhdkajshdajsh
+
+    <div id="modalSeguidores" class="modal">
+        <i class="bi bi-x" onclick="cerrarModal()"></i>
+        <div id="contSeguidores">
+            <div class="headerModal">
+                Seguidores
+            </div>
+            <ul>
+                <li>
+                    <img class="seguidor" src="assets/img/fotosPerfil/omori">
+                    <div class="nombres_usuarios">
+                        <p class="n_usuario">Nombre</p>
+                        <p class="n_usuario_n">Nombre otra vez</p>
+                    </div>
+                    <button id="eliminarSeg" onclick="eliminarSeguidor()"></button>
+                </li>
+                <li>
+                    <img class="seguidor" src="assets/img/fotosPerfil/hacker.png">
+                    <div class="nombres_usuarios">
+                        <p class="n_usuario">Nombre</p>
+                        <p class="n_usuario_n">Nombre otra vez</p>
+                    </div>
+                    <button id="eliminarSeg" onclick="eliminarSeguidor()"></button>
+                </li>
+            </ul>
         </div>
     </div>
+
+    
 </body>
 
 </html>
