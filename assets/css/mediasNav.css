@@ -2,9 +2,16 @@
     #cont-perfiles, .box-text, .box-letras {
       display: none;
     }
-    /* .box-botNav, .icon-inst{
-      justify-content: center;
-    } */
+    #cont-general{
+      margin-left: 10%;
+    }
+    main{
+      width: 90%;
+    }
+    
+    #nav-lateral{
+      width: 10%;
+    }
 } 
 
 @media (min-width: 768px) {
