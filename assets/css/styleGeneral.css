@@ -30,7 +30,7 @@ p, i{
     height: 100vh;
     width: 100vw;
     transition: all .5s;
-    align-items: center;
+    align-items:center;
     justify-content: center;
 }
 
@@ -43,11 +43,35 @@ p, i{
     color: white;
 }
 
+#contClose{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: 20px;
+}
+
 .headerModal{
     font-size: 16px;
     align-items: center;
     font-weight:600;
     padding: 10px;
+}
+
+.line{
+    background-color: #c7c7c7;
+    height: 1px;
+    width:100%;
+}
+
+.preview{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 #divFormCrear{

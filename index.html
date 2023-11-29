@@ -210,11 +210,14 @@
 
     <!-- Los contenedores de los modales se agregan en todas las paginas menos login -->
     <div id="contenedorSubirFoto" class="modal">
-        <i class="bi bi-x" onclick="cerrarModal()"></i>
+        <div id="contClose">
+            <i class="bi bi-x" onclick="cerrarModal()"></i>
+        </div>
         <div id="divFormCrear">
             <div class="headerModal">
                 Crea una nueva publicación
             </div>
+            <div class="line"></div>
             <div class="preview">
                 <img src="assets/img/previewFotopng.png">
                 <form id="formCrear" action="upload.php" method="post" enctype="multipart/form-data">
@@ -222,15 +225,10 @@
                     <input type="file" name="subir-archivo" id="subir-archivo" multiple />
                 </form>
             </div>
-            <input type="submit" id="boton-compartir" value="Compartir" name="submit">
+            <input type="submit" id="boton-compartir" value="Compartir" name="submit" onclick="cerrarModal()">
         </div>
     </div>
 
-    <div id="seguidores" class="git modal">
-        <div id="containerSeg">
-            jsakjhdkajshdajsh
-        </div>
-    </div>
 </body>
 
 </html>
