@@ -1,7 +1,7 @@
 main {
     height: 100%;
     width: 85%;
-    margin-left: 15%;
+    margin-left: 2%;
 }
 
 #container{
@@ -16,19 +16,22 @@ main {
    margin: 90px; 
 }
 
-.inf-sec1{
+.inf-sec1, .inf-sec2{
     display: flex;
     width: 100%;
+    padding: 0% 20%;
 }
 
 .inf-foto{
     display: flex;
+    padding-right: 30px;
 }
 
 .inf-foto img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 2px solid rgba(23, 32, 110, 0.3);
 }
 
 .box-inf{
@@ -38,25 +41,65 @@ main {
 }
 .cont-nam-bot{
     display: flex;
+    margin-bottom: 10px;
+}
+.cont-nam-bot button{
+    padding: 0px 16px;
+}
+.cont-nam-bot i{
+    font-size: 20px;
+    padding: 8px;
 }
 .cont-num{
     display: flex;
+    margin-bottom: 20px;
+    justify-content: space-around;
 }
-.num-publ{
+
+.num{
+    padding: 0px 5px;
+}
+
+.num-publ, .num-seguidores, .num-seguidos, .cont-name {
     display: flex ;
-}
-.num-seguidores{
-    display: flex ;
-}
-.num-seguidos{
-    display: flex ;
-}
-.cont-name{
-    display: flex;
 }
 
 .cont-img img{
     width: 77px;
     height: 77px;
     border-radius: 50%;
+}
+
+.con-historias{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont-img{
+    border: 2px solid rgba(23, 32, 110, 0.3);
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.cont-text{
+    padding-top: 15px;
+}
+.cont-text p, .cont-num p, .cont-nam-bot p{
+    margin-bottom: 0rem;
+}
+
+.inf-sec2{
+    padding-top: 30px;
+}
+
+.cont-img i {
+    font-size: 77px;
 }
