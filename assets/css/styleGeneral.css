@@ -22,7 +22,7 @@ p, i{
 }
 .modal{
     display: none;
-    background: rgba(23, 37, 89, 0.8);
+    background: rgba(0, 0, 0, .7);;
     position: fixed;
     top: 0;
     left: 0;
@@ -210,7 +210,7 @@ button {
     background-color: rgb(255, 255, 255);
 }
  .botonNav:hover{
-    background-color: rgba(217, 132, 115, 0.4);
+    background-color: #EFEFEF;
     border-radius: 5%;
 }
 
@@ -253,30 +253,41 @@ button {
 }
 
 .del-seg, .buttonSeguido{
-    background-color: var(--color-rojoCla);
+    background-color: #EFEFEF;
     border-radius: 10%;
+    color: black;
+    width: 89px;
+    height: 32px;
+}
+
+.buttonSeguido:hover{
+    background-color: #bdbdbd;
     color: white;
 }
-.del-seg:hover, .buttonSeguido:hover{
-    background-color: var(--color-azuOs);
+
+.del-seg:hover{
+    background-color: #bdbdbd;
 }
+
+
 
 .seguidos:hover{
     cursor: pointer;
 }
 
-/* .buttonSeguido{
-    background-color:  var(--color-rojoCla);
+.buttonSeguido{
+    background-color: #EFEFEF;
     border-radius: 10%;
     color: black;
 }
 
 .buttonSeguir{
-    background-color: var(--color-azuCla);
+    background-color: #0095F6;
     border-radius: 10%;
     color:white;
-    height: 30px;
-}
+    width: 89px;
+    height: 32px;
+} 
 
 #divSeguidos{
     font-size: 20px;
@@ -290,9 +301,9 @@ button {
     color: var(--color-azuCla);
     z-index: 100;
 }
-
+/* 
 #notFound{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */

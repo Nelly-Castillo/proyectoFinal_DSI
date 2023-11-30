@@ -51,8 +51,8 @@ main {
 
 .bontDif{
     border-radius: 10%;
-    background-color: var(--color-rojoCla);
-    color: white;
+    background-color: #EFEFEF;
+    color: black;
 }
 .bontDif:hover{
     background-color: var(--color-azuOs);
