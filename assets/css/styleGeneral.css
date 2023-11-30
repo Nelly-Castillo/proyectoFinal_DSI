@@ -20,10 +20,9 @@ p, i{
  --color-rojoCla: #d88373;
  --color-rojoCla2: #f5e2c8;
 }
-
 .modal{
     display: none;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(23, 37, 89, 0.8);
     position: fixed;
     top: 0;
     left: 0;
@@ -73,7 +72,15 @@ p, i{
     justify-content: center;
     align-items: center;
     align-content: center;
+    text-align: center;
+    padding: 20px;
 }
+/* .preview {
+    text-align: center;
+    padding: 20px;
+    
+} */
+
 
 #divFormCrear{
     display: flex;
@@ -83,7 +90,7 @@ p, i{
     border-radius: 10px;
     width: 525px;
     height: 568px;
-    color: black;
+    color: var(--color-azuCla);
     z-index: 100;
 }
 
@@ -93,6 +100,7 @@ p, i{
     position: relative;
     background-color: white;
     z-index: 999;
+    margin-top: 20px;
 }
 
 #subir-archivo{
@@ -109,13 +117,34 @@ p, i{
     border-radius: 10px;
     width: 400px;
     height: 400px;
-    color: black;
+    color: var(--color-azuCla);
     z-index: 100;
 }
 
 .preview img{
-    height: 80px;
+    height: 100px;
 }
+
+input[type="file"] {
+    /* background-color:var(--color-rojoCla2); */
+    border: none;
+    cursor: pointer;
+    /* padding: 0; */
+    font-size: 14px;
+    color: var(--color-azuCla);
+}
+
+.up-img{
+    border: 2px dashed var(--color-azuCla);
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    color: var(--color-azuCla);
+}
+
 /* Nav */
 #nav-lateral {
     padding: 12px 8px;
@@ -131,23 +160,23 @@ p, i{
 }
 
 .box-letras{
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 25px 12px;
     margin-bottom:  20px;
 }
 
 .box-botNav, .icon-inst{
-    margin: 2px;
-    padding: 12px;
+    margin: 12px;
 }
 .box-botNav, .icon-inst, .botonNav{
-    width: 100%;
+    width: 90%;
     display: flex;
 }
 .botonNav {
     align-items: center;
-    height: 25px;
+    height: auto;
+    padding: 12px;
 }
 
 .box-icon i{
@@ -180,9 +209,10 @@ button {
     border: none;
     background-color: rgb(255, 255, 255);
 }
-/* .box-botNav:hover, .botonNav:hover{
+ .botonNav:hover{
     background-color: rgba(217, 132, 115, 0.4);
-} */
+    border-radius: 5%;
+}
 
 .img-lista{
     height: 44px;
@@ -200,7 +230,7 @@ button {
     flex-flow: row nowrap;
     font-size: 14px;
     padding: 8px 16px;
-    color: black;
+    color: var(--color-azuCla);
 }
 
 .del-seg{
@@ -222,23 +252,27 @@ button {
     
 }
 
-.del-seg{
-    background-color: #EFEFEF;
+.del-seg, .buttonSeguido{
+    background-color: var(--color-rojoCla);
     border-radius: 10%;
+    color: white;
+}
+.del-seg:hover, .buttonSeguido:hover{
+    background-color: var(--color-azuOs);
 }
 
 .seguidos:hover{
     cursor: pointer;
 }
 
-.buttonSeguido{
-    background-color: #EFEFEF;
+/* .buttonSeguido{
+    background-color:  var(--color-rojoCla);
     border-radius: 10%;
-    color: black;
-}
+    color: white;
+} */
 
 .buttonSeguir{
-    background-color: #0095F6;
+    background-color: var(--color-azuCla);
     border-radius: 10%;
     color:white;
 }
@@ -252,6 +286,8 @@ button {
     border-radius: 10px;
     width: 400px;
     height: 400px;
-    color: black;
+    color: var(--color-azuCla);
     z-index: 100;
 }
+
+

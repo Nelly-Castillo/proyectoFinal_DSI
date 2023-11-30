@@ -52,6 +52,10 @@ main {
 .bontDif{
     border-radius: 10%;
     background-color: var(--color-rojoCla);
+    color: white;
+}
+.bontDif:hover{
+    background-color: var(--color-azuOs);
 }
 .cont-nam-bot i{
     font-size: 20px;
@@ -116,6 +120,7 @@ main {
     width: 90%;
     margin:0px 90px; 
     border-top: 2px solid rgba(23, 32, 110, 0.3);
+    padding-top: 30px;
 }
 
 .box-img{
