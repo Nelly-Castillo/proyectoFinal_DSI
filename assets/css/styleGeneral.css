@@ -291,4 +291,8 @@ button {
     z-index: 100;
 }
 
-
+#notFound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
