@@ -235,12 +235,15 @@ button {
     background-color: #EFEFEF;
     border-radius: 10%;
     color: black;
+    olor:white;
+    height: 30px;
 }
 
 .buttonSeguir{
     background-color: #0095F6;
     border-radius: 10%;
     color:white;
+    height: 30px;
 }
 
 #divSeguidos{
