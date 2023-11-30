@@ -6,6 +6,57 @@ main {
 
 #container{
     width: 100%;
+    margin-left: 15%;
     padding: 30px 20px 0px;
-    margin: 90px;
+    display: flex;
+}
+
+#cont-info{
+   width: 100%;
+   margin: 90px; 
+}
+
+.inf-sec1{
+    display: flex;
+    width: 100%;
+}
+
+.inf-foto{
+    display: flex;
+}
+
+.inf-foto img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.box-inf{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.cont-nam-bot{
+    display: flex;
+}
+.cont-num{
+    display: flex;
+}
+.num-publ{
+    display: flex ;
+}
+.num-seguidores{
+    display: flex ;
+}
+.num-seguidos{
+    display: flex ;
+}
+.cont-name{
+    display: flex;
+}
+
+.cont-img img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
 }
