@@ -3,6 +3,9 @@ const contSubirFoto = document.getElementById("contenedorSubirFoto")
 const divFormCrear = document.getElementById("divFormCrear");
 const preview = document.getElementsByClassName("preview");
 const contenedorSeguidores = document.getElementById("contenedorSeguidores");
+const sgr1 = document.getElementById("sgr-1");
+const sgr2 = document.getElementById("sgr-2");
+const sgr3 = document.getElementById("sgr-3");
 
 corazon.addEventListener("click", (e) => {
     darLike(e);
@@ -32,9 +35,18 @@ function cerrarSgr(){
     contenedorSeguidores.style.display="none";
 }
 
-function eliminarSeguidor(){
-    
+function eliminarSeguidor1(){
+    sgr1.style.display="none";
 }
+
+function eliminarSeguidor2(){
+    sgr2.style.display="none";
+}
+
+function eliminarSeguidor3(){
+    sgr3.style.display="none";
+}
+
 
 // para subir archivos
 function updateImageDisplay() {
