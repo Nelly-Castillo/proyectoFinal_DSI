@@ -109,23 +109,23 @@
                             <button>Ver archivo</button>
                             <i class="bi bi-gear-wide"></i>
                         </div>
-                        <div class="cont-num">
-                            <div class="num-publ">
-                                <p class="num">#</p>
-                                <p>Publicaciones</p>
-                            </div>
-                            <div class="num-seguidores">
-                                <p class="num">#</p>
-                                <p>Seguidores</p>
-                            </div>
-                            <div class="num-seguidos">
-                                <p class="num">#</p>
-                                <p>Seguidos</p>
-                            </div>
+                    </div>
+                    <div class="cont-num">
+                        <div class="num-publ">
+                            <p class="num">#</p>
+                            <p>Publicaciones</p>
                         </div>
-                        <div class="cont-name">
-                            <p>Persona</p>
+                        <div class="num-seguidores">
+                            <p class="num">#</p>
+                            <p class="seguidores" onclick="modalSeguidores()">Seguidores</p>
                         </div>
+                        <div class="num-seguidos">
+                            <p class="num">#</p>
+                            <p>Seguidos</p>
+                        </div>
+                    </div>
+                    <div class="cont-name">
+                        <p>Persona</p>
                     </div>
                 </div>
                 <div class="inf-sec2">
@@ -156,7 +156,7 @@
     <!-- ventanas modales -->
     <div id="contenedorSubirFoto" class="modal">
         <div id="contClose">
-            <i class="bi bi-x" onclick="cerrarModal()"></i>
+            <i class="bi bi-x" onclick="cerrarModalCrear()"></i>
         </div>
         <div id="divFormCrear">
             <div class="headerModal">
@@ -170,7 +170,29 @@
                     <input type="file" name="subir-archivo" id="subir-archivo" multiple />
                 </form>
             </div>
-            <input type="submit" id="boton-compartir" value="Compartir" name="submit" onclick="cerrarModal()">
+            <input type="submit" id="boton-compartir" value="Compartir" name="submit" onclick="cerrarModalCrear()">
+        </div>
+    </div>
+
+    <div id="contenedorSeguidores" class="modal">
+        <div id="contClose">
+            <i class="bi bi-x" onclick="cerrarSgr()"></i>
+        </div>
+        <div id="divSeguidores">
+            <div class="headerModal">
+                Seguidores
+            </div>
+            <div class="line"></div>
+            <div class="people" id="">
+                <div class="img-redonda">
+                    <img class="img-lista" src="assets/img/fotosPerfil/doritos.jpg">
+                </div>
+                <div class="nombresSeg">
+                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
+                    <p style="margin-bottom: 0;">Nombre persona</p>
+                </div>
+                <button class="del-seg" onclick="eliminarSeguidor()">Eliminar</button>
+            </div>
         </div>
     </div>
 
