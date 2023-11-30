@@ -268,13 +268,14 @@ button {
 /* .buttonSeguido{
     background-color:  var(--color-rojoCla);
     border-radius: 10%;
-    color: white;
-} */
+    color: black;
+}
 
 .buttonSeguir{
     background-color: var(--color-azuCla);
     border-radius: 10%;
     color:white;
+    height: 30px;
 }
 
 #divSeguidos{
