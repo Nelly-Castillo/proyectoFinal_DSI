@@ -9,11 +9,12 @@ main {
     margin-left: 15%;
     padding: 30px 20px 0px;
     display: flex;
+    flex-direction: column;
 }
 
 #cont-info{
-   width: 100%;
-   margin: 90px; 
+   width: 90%;
+   margin: 90px 90px 70px 90px; 
 }
 
 .inf-sec1, .inf-sec2{
@@ -44,7 +45,13 @@ main {
     margin-bottom: 10px;
 }
 .cont-nam-bot button{
-    padding: 0px 16px;
+    margin: 0px 16px;
+    padding: 5px;
+}
+
+.bontDif{
+    border-radius: 10%;
+    background-color: var(--color-rojoCla);
 }
 .cont-nam-bot i{
     font-size: 20px;
@@ -102,4 +109,26 @@ main {
 
 .cont-img i {
     font-size: 77px;
+}
+
+
+#cont-fotos{
+    width: 90%;
+    margin:0px 90px; 
+    border-top: 2px solid rgba(23, 32, 110, 0.3);
+}
+
+.box-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.gal-perfil{
+    padding: 2px;
+}
+.gal-perfil img{
+    width: 310px;
+    height: 310px;
 }
