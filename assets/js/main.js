@@ -45,7 +45,6 @@ function funcionesPublicar(){
 
 //para acceder a la imagen que se subió
 function equis(){
-    cerrarModalCrear();
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'upload.php', true);
     xhr.onload = function () {
@@ -53,6 +52,9 @@ function equis(){
             const respuesta = JSON.parse(xhr.responseText);
             const rutaGuardada = respuesta.rutaGuardada;
             publicarFoto(rutaGuardada);
+        }
+        else{
+            console.log("error xhml");
         }
     };
 
@@ -119,16 +121,16 @@ function publicarFoto(urlFoto){
 
     subirArchivoInput.addEventListener("change", function (event) {
         const file = event.target.files[0];
-        
+
         if (file) {
             const reader = new FileReader();
             reader.onload = function (e) {
-                urlFoto= e.target.result;
-                console.log(urlFoto); // Log the data URL
+                const nuevaUrlFoto = e.target.result;
+                console.log(nuevaUrlFoto); // Log the data URL
+                publicarFoto(nuevaUrlFoto); // Llama a publicarFoto nuevamente con la nueva URL
             };
             reader.readAsDataURL(file);
         }
-
     });
 
     
