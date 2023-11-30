@@ -226,3 +226,32 @@ button {
     background-color: #EFEFEF;
     border-radius: 10%;
 }
+
+.seguidos:hover{
+    cursor: pointer;
+}
+
+.buttonSeguido{
+    background-color: #EFEFEF;
+    border-radius: 10%;
+    color: black;
+}
+
+.buttonSeguir{
+    background-color: #0095F6;
+    border-radius: 10%;
+    color:white;
+}
+
+#divSeguidos{
+    font-size: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    color: black;
+    z-index: 100;
+}

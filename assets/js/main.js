@@ -3,9 +3,15 @@ const contSubirFoto = document.getElementById("contenedorSubirFoto")
 const divFormCrear = document.getElementById("divFormCrear");
 const preview = document.getElementsByClassName("preview");
 const contenedorSeguidores = document.getElementById("contenedorSeguidores");
+
 const sgr1 = document.getElementById("sgr-1");
 const sgr2 = document.getElementById("sgr-2");
 const sgr3 = document.getElementById("sgr-3");
+
+const contenedorSeguidos = document.getElementById("contenedorSeguidos");
+const botonss1 = document.getElementById("boton-ss1"); 
+const botonss2 = document.getElementById("boton-ss2"); 
+const botonss3 = document.getElementById("boton-ss3"); 
 
 corazon.addEventListener("click", (e) => {
     darLike(e);
@@ -46,6 +52,32 @@ function eliminarSeguidor2(){
 function eliminarSeguidor3(){
     sgr3.style.display="none";
 }
+
+function modalSeguidos(){
+    contenedorSeguidos.style.display="flex";
+}
+
+botonss1.addEventListener("click", (e) => {
+    seguidoSeguir(e);
+});
+
+botonss2.addEventListener("click", (e) => {
+    seguidoSeguir(e);
+});
+
+botonss3.addEventListener("click", (e) => {
+    seguidoSeguir(e);
+});
+
+function seguidoSeguir(evento){
+    evento.target.classList.toggle("buttonSeguir");
+    evento.target.classList.toggle("buttonSeguido");
+}
+
+function cerrarSdos(){
+    contenedorSeguidos.style.display="none";
+}
+
 
 
 // para subir archivos

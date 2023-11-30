@@ -121,7 +121,7 @@
                         </div>
                         <div class="num-seguidos">
                             <p class="num">#</p>
-                            <p>Seguidos</p>
+                            <p class="seguidos" onclick="modalSeguidos()">Seguidos</p>
                         </div>
                     </div>
                     <div class="cont-name">
@@ -213,6 +213,50 @@
                 </div>
                 <button class="del-seg" onclick="eliminarSeguidor3()">Eliminar</button>
             </div>
+        </div>
+    </div>
+
+
+    <div id="contenedorSeguidos" class="modal">
+        <div id="contClose">
+            <i class="bi bi-x" onclick="cerrarSdos()"></i>
+        </div>
+        <div id="divSeguidos">
+            <div class="headerModal">
+                Seguidos
+            </div>
+            <div class="line"></div>
+            <div class="people" id="sdo-1">
+                <div class="img-redonda">
+                    <img class="img-lista" src="assets/img/fotosPerfil/fif.jpg">
+                </div>
+                <div class="nombresSeg">
+                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
+                    <p style="margin-bottom: 0;">Nombre persona</p>
+                </div>
+                <button id="boton-ss1" class="buttonSeguido">Siguiendo</button>
+            </div>
+            <div class="people" id="sdo-2">
+                <div class="img-redonda">
+                    <img class="img-lista" src="assets/img/fotosPerfil/doritos.jpg">
+                </div>
+                <div class="nombresSeg">
+                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
+                    <p style="margin-bottom: 0;">Nombre persona</p>
+                </div>
+                <button id="boton-ss2 " class="buttonSeguido">Siguiendo</button>
+            </div>
+            <div class="people" id="sdo-3">
+                <div class="img-redonda">
+                    <img class="img-lista" src="assets/img/fotosPerfil/ternurines.jpg">
+                </div>
+                <div class="nombresSeg">
+                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
+                    <p style="margin-bottom: 0;">Nombre persona</p>
+                </div>
+                <button id="boton-ss3 " class="buttonSeguido">Siguiendo</button>
+            </div>
+            
         </div>
     </div>
 
