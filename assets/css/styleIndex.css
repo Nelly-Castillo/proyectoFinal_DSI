@@ -90,7 +90,7 @@ main, .perfiles, .titulo, .infoperfil, .imagenpost, .boxusername, .username, .it
     flex-wrap: nowrap;
 }
 
-.titulo, .infoperfil, .imagenpost, input, .boxdecomentarios, .miperfil, .boxfotoperfil, .boxusuarios, .boxcambio ,  .boxdeseguir, .boxsugerencias, .boxprueba, .boxnombre, .boxtodo{
+.titulo, .infoperfil, .imagenpost, input, .miperfil, .boxfotoperfil, .boxusuarios, .boxcambio ,  .boxdeseguir, .boxsugerencias, .boxprueba, .boxnombre, .boxtodo{
     justify-content: center;
 }
 
@@ -182,4 +182,7 @@ input {
 
 .items2, .comentarios{
     padding: 8px 5px;
+}
+.comentarios{
+    flex-direction: column;
 }
