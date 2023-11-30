@@ -75,6 +75,15 @@ p, i{
     align-content: center;
 }
 
+.contenidosCrearModal{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 #divFormCrear{
     display: flex;
     flex-flow: column nowrap;
@@ -254,4 +263,10 @@ button {
     height: 400px;
     color: black;
     z-index: 100;
+}
+
+#notFound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
