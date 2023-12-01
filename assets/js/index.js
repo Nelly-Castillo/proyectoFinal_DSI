@@ -21,12 +21,12 @@ function addComentario() {
 
     // Crear un objeto de comentario
     var comentario = {
-        texto: newComentario,
+        texto: nuevoComentario,
         timestamp: new Date().toLocaleString()
     };
 
     // Obtener comentarios existentes o inicializar un array vacío
-    var comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];
+    var comentarios = JSON.parse(localStorage.getItem('comentarios'));
 
     // Agregar el nuevo comentario al array
     comentarios.push(comentario);
@@ -44,7 +44,8 @@ function mostrarComentarios() {
     var listComentarios = document.getElementById('list-Comentarios');
     listComentarios.innerHTML = '';
 
-    var comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];
+    var comentarios = JSON.parse(localStorage.getItem('comentarios'));
+    console.log(comentarios);
 
     comentarios.forEach(function (comentario, index) {
         var comentarioElement = document.createElement('div');
