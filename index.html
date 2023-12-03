@@ -101,7 +101,7 @@
                             <div class="imagenpost">
                                 <img src="assets/img/fotosPerfil/tlacuache.jpg" class="post" onclick="window.location.href='otrosPerfiles.html'" style="cursor: pointer;">
                             </div>
-                            <div class="boxusername">
+                            <div class="boxusername" onclick="window.location.href='otrosPerfiles.html'">
                                 <p class="username">Personas 4</p>
                             </div>
                             <div class="opcion">
@@ -131,7 +131,7 @@
                     <div class="comentarios">
                         <div class="boxdecomentarios">
                             <input type="text" class="boxcomentarios" id="newComentario" placeholder="Añade un comentario...">
-                            <button onclick="addComentario()">Añadir</button>
+                            <button type="button" class="btn btn-light" id="btn" onclick="addComentario()">Añadir</button>
                         </div>
                         <div id="list-Comentarios"></div>
                         <!-- <div class="carafeliz">
