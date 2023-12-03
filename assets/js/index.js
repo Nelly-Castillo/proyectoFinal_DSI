@@ -50,7 +50,7 @@ function mostrarComentarios() {
     comentarios.forEach(function (comentario, index) {
         var comentarioElement = document.createElement('div');
         comentarioElement.className = 'comentario';
-        comentarioElement.innerHTML = `<span>${comentario.texto}</span> <span class="eliminar-comentario" onclick="eliminarComentario(${index})">Eliminar</span>`;
+        comentarioElement.innerHTML = `<span class="com">${comentario.texto}</span><button type="button" class="btn btn-light" id="btn" onclick="eliminarComentario(${index})">Eliminar</button>`;
         listComentarios.appendChild(comentarioElement);
     });
 }

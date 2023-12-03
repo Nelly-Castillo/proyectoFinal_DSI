@@ -54,7 +54,7 @@ main {
 
 /* Conjuntos */
 
-body, .titulo, .fotopost, .miperfil{
+body, .titulo, .fotopost, .miperfil, .comentario{
     width: 100%;
 }
 
@@ -74,7 +74,7 @@ main {
     background-color: rgb(255, 255, 255);
 }
 
-main, .perfiles, .titulo, .infoperfil, .imagenpost, .boxusername, .username, .items2, .comentarios, .boxdecomentarios, .miperfil, .boxfotoperfil, .boxusuarios, .boxcambio ,  .boxdesegui, .boxsugerencia, .boxsugerencias, .boxprueba, .parte1, .sugeridos, .boxnombre, .boxtodo, #cont-general{
+main, .perfiles, .titulo, .infoperfil, .imagenpost, .boxusername, .username, .items2, .comentarios, .boxdecomentarios, .miperfil, .boxfotoperfil, .boxusuarios, .boxcambio ,  .boxdesegui, .boxsugerencia, .boxsugerencias, .boxprueba, .parte1, .sugeridos, .boxnombre, .boxtodo, #cont-general, #list-Comentarios, .comentario, .com{
     display: flex;
 }
 
@@ -94,7 +94,7 @@ main, .perfiles, .titulo, .infoperfil, .imagenpost, .boxusername, .username, .it
     justify-content: center;
 }
 
-.titulo, .infoperfil, .imagenpost, .username, .miperfil, .boxsugerencias, .boxtodo{
+.titulo, .infoperfil, .imagenpost, .username, .miperfil, .boxsugerencias, .boxtodo, .com{
     align-items: center;
 }
 
@@ -106,7 +106,7 @@ main, .perfiles, .titulo, .infoperfil, .imagenpost, .boxusername, .username, .it
     margin-bottom: 0rem;
 }
 
-.boxitems2marcador, .carafeliz, .opcion, .botonvertodo .columna2{
+.boxitems2marcador, .carafeliz, .opcion, .botonvertodo .columna2, #btn{
     margin-left: auto;
 }
 
@@ -169,11 +169,13 @@ input {
     font-weight: bold;
     font-size: 14px;
     margin-left: 10px;
+    cursor: pointer;
 }
 .username{
     width: 348px;
     height: 15px;
     margin-top: 13px;
+    cursor: pointer;
 }
 .opcion{
     width: 40px;
@@ -185,4 +187,8 @@ input {
 }
 .comentarios{
     flex-direction: column;
+}
+
+.boxdecomentarios, .comentario{
+    padding: 5px;
 }
