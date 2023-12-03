@@ -88,8 +88,8 @@ p, i{
     align-items: center;
     background-color: white;
     border-radius: 10px;
-    width: 525px;
-    height: 568px;
+    width: 40%;
+    height:40%;
     color: var(--color-azuCla);
     z-index: 100;
 }
