@@ -9,6 +9,9 @@ const sgr1 = document.getElementById("sgr-1");
 const sgr2 = document.getElementById("sgr-2");
 const sgr3 = document.getElementById("sgr-3");
 
+const containerFeed = document.getElementById("cont-publicaciones");
+const subirArchivoInput = document.getElementById("subir-archivo");
+
 function mostrarCrear(){
     contSubirFoto.style.display="flex";
     console.log("se muestra el modal de crear");
@@ -43,6 +46,21 @@ function funcionesPublicar(){
     equis();
 }
 
+
+subirArchivoInput.addEventListener("change", function (event) {
+    const file = event.target.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const nuevaUrlFoto = e.target.result;
+            console.log(nuevaUrlFoto);
+            publicarFoto(nuevaUrlFoto);
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
 //para acceder a la imagen que se subió
 function equis(){
     const xhr = new XMLHttpRequest();
@@ -54,7 +72,7 @@ function equis(){
             publicarFoto(rutaGuardada);
         }
         else{
-            console.log("error xhml");
+            console.log("error xhml pipipipi");
         }
     };
 
@@ -63,9 +81,6 @@ function equis(){
 
 
 function publicarFoto(urlFoto){
-
-    const containerFeed = document.getElementById("cont-publicaciones");
-    const subirArchivoInput = document.getElementById("subir-archivo");
 
     const publicacion = document.createElement("div");
     publicacion.classList.add("nueva-publicacion");
@@ -107,7 +122,7 @@ function publicarFoto(urlFoto){
     </div>
     <div class="comentarios">
         <div class="boxdecomentarios">
-            <input type="text" class="boxcomentarios" id="newComentario" placeholder="Añade un comentario...">
+            <input type="text" class="boxcomentarios" class="newComentario" placeholder="Añade un comentario...">
             <button onclick="addComentario()">Añadir</button>
         </div>
         <div id="list-Comentarios"></div>
@@ -118,22 +133,6 @@ function publicarFoto(urlFoto){
         </div> -->
     </div>
     `;
-
-    subirArchivoInput.addEventListener("change", function (event) {
-        const file = event.target.files[0];
-
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                const nuevaUrlFoto = e.target.result;
-                console.log(nuevaUrlFoto); // Log the data URL
-                publicarFoto(nuevaUrlFoto); // Llama a publicarFoto nuevamente con la nueva URL
-            };
-            reader.readAsDataURL(file);
-        }
-    });
-
-    
     containerFeed.appendChild(publicacion);
 
 }

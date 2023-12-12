@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    $carpeta = "assets/img/galeria";  // Specify the folder where you want to save the files
+    $carpeta = "assets/img/galeria";
 
     $contador = count(glob($carpeta . '*'));
     $contador++;
@@ -9,10 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $rutaGuardada = $carpeta . $contador;
 
         // Move the uploaded file to the target directory
-      if (move_uploaded_file($_FILES["subir-archivo"]["tmp_name"], $$rutaGuardada)) {
+      if (move_uploaded_file($_FILES["subir-archivo"]["tmp_name"], $rutaGuardada)) {
             echo "El archivo se subió";
             echo json_encode(['rutaImagen' => $rutaGuardada]);
-        } else {
       } else {
           echo "Error al subir el archivo.";
       }
