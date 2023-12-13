@@ -116,13 +116,21 @@ main {
 }
 
 
-#cont-fotos{
-    width: 90%;
-    margin:0px 90px; 
-    border-top: 2px solid rgba(23, 32, 110, 0.3);
+#cont-fotos, #cont-fotos-ex{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+#cont-fotos{
+    border-top: 2px solid rgba(23, 32, 110, 0.3);
+    width: 90%;
+    margin:0px 90px; 
+}
+#cont-fotos-ex{
+    width: 70%;
+    display: flex;
+    margin:0% 15%; 
+}
+
 
 .box-img{
     display: flex;
