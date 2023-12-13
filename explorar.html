@@ -25,7 +25,6 @@
                 <button onclick="window.location.href='index.html'" class="botonNav">
                     <i class="bi bi-instagram"></i>
                 </button>
-                <!-- <img src="assets/img/iconos/instagram.svg" alt=""> -->
             </div>
             <div class="box-letras"> 
                 <h2 id="letras">Instagram</h2>
@@ -34,7 +33,6 @@
                 <button onclick="window.location.href='index.html'" class="botonNav">
                     <div class="box-icon">
                         <i class="bi bi-house-door"></i>
-                        <!-- <img src="assets/img/iconos/house-door.svg" alt=""> -->
                     </div>
                     <div class="box-text">
                         <p>Inicio</p>
@@ -45,7 +43,6 @@
                 <button  class="botonNav">
                     <div class="box-icon">
                         <i class="bi bi-search"></i>
-                        <!-- <img src="assets/img/iconos/search.svg" alt=""> -->
                     </div>
                     <div class="box-text">
                         <p>Búsqueda</p>
@@ -56,7 +53,6 @@
                 <button onclick="window.location.href='explorar.html'" class="botonNav">
                     <div class="box-icon">
                         <i class="bi bi-compass"></i>
-                        <!-- <img src="assets/img/iconos/compass.svg" alt=""> -->
                     </div>
                     <div class="box-text">
                         <p>Explorar</p>
@@ -79,7 +75,7 @@
         <section id="container">
             <div id="cont-fotos-ex">
                <div class="box-img">
-                    <div class="gal-perfil">
+                    <div class="gal-perfil" onclick="mostrarPerfil()">
                         <img src="assets/img/galeria/arc1.jpg" alt="ex-per">
                     </div>
                     <div class="gal-perfil">
@@ -109,46 +105,53 @@
     </main>
 
     <!-- ventanas modales -->
-    <div id="contenedorSeguidores" class="modal">
+    <div id="contenedorPerfil" class="modal">
         <div id="contClose">
-            <i class="bi bi-x" onclick="cerrarSgr()"></i>
+            <i class="bi bi-x" onclick="cerrarModalPerfil()"></i>
         </div>
-        <div id="divSeguidores">
-            <div class="headerModal">
-                Seguidores
+        <section id="cont-publicaciones">
+            <div class="perfiles">
+                <div class="titulo">
+                    <div class="infoperfil">
+                        <div class="imagenpost">
+                            <img src="assets/img/fotosPerfil/tlacuache.jpg" class="post" onclick="window.location.href='otrosPerfiles.html'" style="cursor: pointer;">
+                        </div>
+                        <div class="boxusername" onclick="window.location.href='otrosPerfiles.html'">
+                            <p class="username">Personas 4</p>
+                        </div>
+                        <div class="opcion">
+                            <button class="puntos">
+                                <i class="iconos bi bi-three-dots"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxfotopost">
+                    <img src="assets/img/galeria/tlacu.jpg" class="fotopost">
+                </div>
+                <div class="items2">
+                    <button class="boxitems2">
+                        <i class="iconos bi bi-heart" id="megusta"></i>
+                    </button>
+                    <button class="boxitems2">
+                        <i class="iconos bi bi-chat"></i>
+                    </button>
+                    <button class="boxitems2">
+                        <i class="iconos bi bi-send"></i>
+                    </button>
+                    <button class="boxitems2marcador">
+                        <i class="iconos bi bi-bookmark"></i>
+                    </button>
+                </div>
+                <div class="comentarios">
+                    <div class="boxdecomentarios">
+                        <input type="text" class="boxcomentarios" id="newComentario" placeholder="Añade un comentario...">
+                        <button type="button" class="btn btn-light" id="btn" onclick="addComentario()">Añadir</button>
+                    </div>
+                    <div id="list-Comentarios"></div>
+                </div>
             </div>
-            <div class="line"></div>
-            <div class="people" id="sgr-1">
-                <div class="img-redonda">
-                    <img class="img-lista" src="assets/img/fotosPerfil/doritos.jpg">
-                </div>
-                <div class="nombresSeg">
-                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
-                    <p style="margin-bottom: 0;">Nombre persona</p>
-                </div>
-                <button class="del-seg" onclick="eliminarSeguidor1()">Eliminar</button>
-            </div>
-            <div class="people" id="sgr-2">
-                <div class="img-redonda">
-                    <img class="img-lista" src="assets/img/fotosPerfil/omori.png">
-                </div>
-                <div class="nombresSeg">
-                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
-                    <p style="margin-bottom: 0;">Nombre persona</p>
-                </div>
-                <button class="del-seg" onclick="eliminarSeguidor2()">Eliminar</button>
-            </div>
-            <div class="people" id="sgr-3">
-                <div class="img-redonda">
-                    <img class="img-lista" src="assets/img/fotosPerfil/hacker.png">
-                </div>
-                <div class="nombresSeg">
-                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
-                    <p style="margin-bottom: 0;">Nombre persona</p>
-                </div>
-                <button class="del-seg" onclick="eliminarSeguidor3()">Eliminar</button>
-            </div>
-        </div>
+        </section>
     </div>
 
 </body>
