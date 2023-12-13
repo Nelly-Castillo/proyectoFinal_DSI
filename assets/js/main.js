@@ -42,7 +42,13 @@ function funcionesPublicar(){
     cerrarModalCrear();
     equis();
 }
-
+function mostrarPerfil(){
+    contenedorPerfil.style.display="flex";
+    console.log("se muestra el modal de perfil");
+}
+function cerrarModalPerfil(){
+    contenedorPerfil.style.display="none";
+}
 //para acceder a la imagen que se subió
 function equis(){
     const xhr = new XMLHttpRequest();
