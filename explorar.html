@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styleGeneral.css">
+    <link rel="stylesheet" href="assets/css/stylesPerfil.css">
+    <link rel="stylesheet" href="assets/css/mediasNav.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="assets/img/icon.svg" />
+    <title>Instagram</title>
+</head>
+<body>
+    <nav>
+        <section id="nav-lateral">
+            <div class="box-icon icon-inst">
+                <button onclick="window.location.href='index.html'" class="botonNav">
+                    <i class="bi bi-instagram"></i>
+                </button>
+                <!-- <img src="assets/img/iconos/instagram.svg" alt=""> -->
+            </div>
+            <div class="box-letras"> 
+                <h2 id="letras">Instagram</h2>
+            </div>
+            <div class="box-botNav">
+                <button onclick="window.location.href='index.html'" class="botonNav">
+                    <div class="box-icon">
+                        <i class="bi bi-house-door"></i>
+                        <!-- <img src="assets/img/iconos/house-door.svg" alt=""> -->
+                    </div>
+                    <div class="box-text">
+                        <p>Inicio</p>
+                    </div>
+                </button>
+            </div>
+            <div class="box-botNav">
+                <button  class="botonNav">
+                    <div class="box-icon">
+                        <i class="bi bi-search"></i>
+                        <!-- <img src="assets/img/iconos/search.svg" alt=""> -->
+                    </div>
+                    <div class="box-text">
+                        <p>Búsqueda</p>
+                    </div>
+                </button>
+            </div>
+            <div class="box-botNav">
+                <button onclick="window.location.href='explorar.html'" class="botonNav">
+                    <div class="box-icon">
+                        <i class="bi bi-compass"></i>
+                        <!-- <img src="assets/img/iconos/compass.svg" alt=""> -->
+                    </div>
+                    <div class="box-text">
+                        <p>Explorar</p>
+                    </div>
+                </button>
+            </div>
+            <div class="box-botNav">
+                <button onclick="window.location.href='perfil.html'" class="botonNav">
+                    <div class="box-icon">
+                        <img src="assets/img/fotosPerfil/stitch.jpg" class="perfilNav" alt="Perfil">
+                    </div>
+                    <div class="box-text">
+                        <p>Perfil</p>
+                    </div>
+                </button>
+            </div>
+        </section>
+    </nav>
+    <main>
+        <section id="container">
+            <div id="cont-fotos-ex">
+               <div class="box-img">
+                    <div class="gal-perfil">
+                        <img src="assets/img/galeria/arc1.jpg" alt="ex-per">
+                    </div>
+                    <div class="gal-perfil">
+                        <img src="assets/img/galeria/chavelo1.jpg" alt="ex-per">
+                    </div>
+                    <div class="gal-perfil">
+                        <img src="assets/img/galeria/doritos1.png" alt="ex-per">
+                    </div>
+                    <div class="gal-perfil">
+                        <img src="assets/img/galeria/hack1.jpg" alt="ex-per">
+                    </div>
+                    <div class="gal-perfil">
+                        <img src="assets/img/galeria/info1.jpg" alt="ex-per">
+                    </div>
+                    <div class="gal-perfil">
+                        <img src="assets/img/galeria/kar1.jpg" alt="ex-per">
+                    </div>
+                    <div class="gal-perfil">
+                        <img src="assets/img/galeria/meca1.jpg" alt="ex-per">
+                    </div>
+                    <div class="gal-perfil">
+                        <img src="assets/img/galeria/ternu1.jpg" alt="ex-per">
+                    </div>
+               </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ventanas modales -->
+    <div id="contenedorSeguidores" class="modal">
+        <div id="contClose">
+            <i class="bi bi-x" onclick="cerrarSgr()"></i>
+        </div>
+        <div id="divSeguidores">
+            <div class="headerModal">
+                Seguidores
+            </div>
+            <div class="line"></div>
+            <div class="people" id="sgr-1">
+                <div class="img-redonda">
+                    <img class="img-lista" src="assets/img/fotosPerfil/doritos.jpg">
+                </div>
+                <div class="nombresSeg">
+                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
+                    <p style="margin-bottom: 0;">Nombre persona</p>
+                </div>
+                <button class="del-seg" onclick="eliminarSeguidor1()">Eliminar</button>
+            </div>
+            <div class="people" id="sgr-2">
+                <div class="img-redonda">
+                    <img class="img-lista" src="assets/img/fotosPerfil/omori.png">
+                </div>
+                <div class="nombresSeg">
+                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
+                    <p style="margin-bottom: 0;">Nombre persona</p>
+                </div>
+                <button class="del-seg" onclick="eliminarSeguidor2()">Eliminar</button>
+            </div>
+            <div class="people" id="sgr-3">
+                <div class="img-redonda">
+                    <img class="img-lista" src="assets/img/fotosPerfil/hacker.png">
+                </div>
+                <div class="nombresSeg">
+                    <p style="font-weight: bold; margin-bottom: 0;">Nombre usuario</p>
+                    <p style="margin-bottom: 0;">Nombre persona</p>
+                </div>
+                <button class="del-seg" onclick="eliminarSeguidor3()">Eliminar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="assets/js/main.js"></script>
