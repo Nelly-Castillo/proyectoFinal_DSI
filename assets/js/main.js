@@ -41,12 +41,6 @@ function eliminarSeguidor3(){
     sgr3.style.display="none";
 }
 
-function funcionesPublicar(){
-    cerrarModalCrear();
-    equis();
-}
-
-
 subirArchivoInput.addEventListener("change", function (event) {
     const file = event.target.files[0];
 
@@ -68,7 +62,7 @@ function equis(){
     xhr.onload = function () {
         if (xhr.status === 200) {
             const respuesta = JSON.parse(xhr.responseText);
-            const rutaGuardada = respuesta.rutaGuardada;
+            const rutaGuardada = respuesta.rutaImagen;
             publicarFoto(rutaGuardada);
         }
         else{
@@ -136,6 +130,12 @@ function publicarFoto(urlFoto){
     containerFeed.appendChild(publicacion);
 
 }
+
+function funcionesPublicar(){
+    cerrarModalCrear();
+    equis();
+}
+
     
 
 // // para subir archivos
