@@ -2,7 +2,7 @@ const contSubirFoto = document.getElementById("contenedorSubirFoto")
 const divFormCrear = document.getElementById("divFormCrear");
 const preview = document.getElementsByClassName("preview");
 const contenedorSeguidores = document.getElementById("contenedorSeguidores");
-
+const contperfil = document.getElementById("contenedorPerfil");
 const formCrear = document.getElementById("formCrear")
 
 const sgr1 = document.getElementById("sgr-1");
@@ -39,6 +39,15 @@ function eliminarSeguidor2(){
 
 function eliminarSeguidor3(){
     sgr3.style.display="none";
+}
+
+function mostrarPerfil(){
+    contperfil.style.display="flex";
+    console.log("se muestra el modal de crear");
+}
+
+function cerrarModalPerfil(){
+    contperfil.style.display="none";
 }
 
 subirArchivoInput.addEventListener("change", function (event) {
@@ -154,11 +163,6 @@ function publicarFoto(urlFoto){
             <button onclick="addComentario()">Añadir</button>
         </div>
         <div id="list-Comentarios"></div>
-        <!-- <div class="carafeliz">
-            <button class="boxitems2">
-                <i  class="iconos bi bi-emoji-smile"></i>
-            </button>
-        </div> -->
     </div>
     `;
     containerFeed.appendChild(publicacion);

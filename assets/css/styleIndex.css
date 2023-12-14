@@ -70,7 +70,7 @@ main {
     height: auto;
 }
 
-.items2, .comentarios{
+.items2, .comentarios, .titulo{
     background-color: rgb(255, 255, 255);
 }
 
