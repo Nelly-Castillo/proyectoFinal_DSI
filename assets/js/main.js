@@ -9,6 +9,9 @@ const sgr1 = document.getElementById("sgr-1");
 const sgr2 = document.getElementById("sgr-2");
 const sgr3 = document.getElementById("sgr-3");
 
+const containerFeed = document.getElementById("cont-publicaciones");
+const subirArchivoInput = document.getElementById("subir-archivo");
+
 function mostrarCrear(){
     contSubirFoto.style.display="flex";
     console.log("se muestra el modal de crear");
@@ -38,40 +41,74 @@ function eliminarSeguidor3(){
     sgr3.style.display="none";
 }
 
-function funcionesPublicar(){
-    cerrarModalCrear();
-    equis();
-}
-function mostrarPerfil(){
-    contenedorPerfil.style.display="flex";
-    console.log("se muestra el modal de perfil");
-}
-function cerrarModalPerfil(){
-    contenedorPerfil.style.display="none";
-}
+subirArchivoInput.addEventListener("change", function (event) {
+    const file = event.target.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const nuevaUrlFoto = e.target.result;
+            console.log(nuevaUrlFoto);
+            publicarFoto(nuevaUrlFoto);
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
 //para acceder a la imagen que se subió
-function equis(){
+// function equis(){
+//     const xhr = new XMLHttpRequest();
+//     xhr.open('POST', 'assets/servidor/upload.php', true);
+//     xhr.onload = function () {
+//         if (xhr.status === 200) {
+//             const respuesta = JSON.parse(xhr.responseText);
+//             const rutaGuardada = respuesta.rutaImagen;
+//             publicarFoto(rutaGuardada);
+//         }
+//         else{
+//             console.log("error xhml pipipipi");
+//         }
+//     };
+
+//     xhr.send(new FormData(formCrear))
+// }
+
+function equis() {
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'upload.php', true);
+    const formCrear = document.getElementById('formCrear'); // Reemplaza 'tuFormulario' con el ID correcto de tu formulario
+
+    xhr.open('POST', 'assets/servidor/upload.php', true);
+
     xhr.onload = function () {
         if (xhr.status === 200) {
-            const respuesta = JSON.parse(xhr.responseText);
-            const rutaGuardada = respuesta.rutaGuardada;
-            publicarFoto(rutaGuardada);
+            try {
+                console.log( xhr.responseText);
+                // const respuesta = JSON.parse(xhr.responseText);
+                // const rutaGuardada = respuesta.rutaImagen;
+                // publicarFoto(rutaGuardada);
+            } catch (error) {
+                console.log("Error al parsear la respuesta JSON:", error);
+            }
+        } 
+        else if (xhr.status === 404){
+            console.log("error :/");
         }
-        else{
-            console.log("error xhml");
+        else {
+            console.log("Error en la solicitud XMLHttpRequest:", xhr.status);
         }
     };
 
-    xhr.send(new FormData(formCrear))
+    xhr.onerror = function () {
+        console.log("Error de red al realizar la solicitud XMLHttpRequest");
+    };
+
+    const formData = new FormData(formCrear);
+
+    xhr.send(formData);
 }
 
 
 function publicarFoto(urlFoto){
-
-    const containerFeed = document.getElementById("cont-publicaciones");
-    const subirArchivoInput = document.getElementById("subir-archivo");
 
     const publicacion = document.createElement("div");
     publicacion.classList.add("nueva-publicacion");
@@ -113,7 +150,7 @@ function publicarFoto(urlFoto){
     </div>
     <div class="comentarios">
         <div class="boxdecomentarios">
-            <input type="text" class="boxcomentarios" id="newComentario" placeholder="Añade un comentario...">
+            <input type="text" class="boxcomentarios" class="newComentario" placeholder="Añade un comentario...">
             <button onclick="addComentario()">Añadir</button>
         </div>
         <div id="list-Comentarios"></div>
@@ -124,25 +161,15 @@ function publicarFoto(urlFoto){
         </div> -->
     </div>
     `;
-
-    subirArchivoInput.addEventListener("change", function (event) {
-        const file = event.target.files[0];
-
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                const nuevaUrlFoto = e.target.result;
-                console.log(nuevaUrlFoto); // Log the data URL
-                publicarFoto(nuevaUrlFoto); // Llama a publicarFoto nuevamente con la nueva URL
-            };
-            reader.readAsDataURL(file);
-        }
-    });
-
-    
     containerFeed.appendChild(publicacion);
 
 }
+
+function funcionesPublicar(){
+    cerrarModalCrear();
+    equis();
+}
+
     
 
 // // para subir archivos
