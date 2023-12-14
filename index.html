@@ -23,7 +23,9 @@
     <nav>
         <section id="nav-lateral">
             <div class="box-icon icon-inst">
-                <i class="bi bi-instagram"></i>
+                <button onclick="window.location.href='index.html'" class="botonNav">
+                    <i class="bi bi-instagram"></i>
+                </button>
                 <!-- <img src="assets/img/iconos/instagram.svg" alt=""> -->
             </div>
             <div class="box-letras"> 
@@ -141,7 +143,6 @@
                         </div> -->
                     </div>
                 </div>
-            </div>
             </section>
             <section id="cont-perfiles">
                 <div class="columna2">
@@ -213,11 +214,9 @@
             <div class="preview">
                 <img id="notFound" src="assets/img/previewFotopng.png">
                 <form id="formCrear" name="formUpload" action="upload.php" method="post" enctype="multipart/form-data">
-                    <!-- <input type="file" name="subir-archivo" id="subir-archivo" multiple/> -->
-                    <!-- <input id="input-b1" name="input-b1" type="file" class="file" data-browse-on-zone-click="true"> -->
                     <div class="mb-3">
                         <label for="formFile" class="form-label"> Arrastra las fotos aquí</label>
-                        <input id="subir-archivo" class="form-control" type="file" id="formFile">
+                        <input id="subir-archivo" class="form-control" type="file" id="formFile" name="subir-archivo">
                     </div> 
                 </form>
             </div>

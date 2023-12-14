@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    main{
+      width: 90%;
+    }
+    /* #container{
+        
+    } */
+} 
+
+@media (min-width: 768px) {
+  .icon-inst{
+    display: none;
+  }
+}

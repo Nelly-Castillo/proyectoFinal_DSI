@@ -56,21 +56,55 @@ subirArchivoInput.addEventListener("change", function (event) {
 });
 
 //para acceder a la imagen que se subió
-function equis(){
+// function equis(){
+//     const xhr = new XMLHttpRequest();
+//     xhr.open('POST', 'assets/servidor/upload.php', true);
+//     xhr.onload = function () {
+//         if (xhr.status === 200) {
+//             const respuesta = JSON.parse(xhr.responseText);
+//             const rutaGuardada = respuesta.rutaImagen;
+//             publicarFoto(rutaGuardada);
+//         }
+//         else{
+//             console.log("error xhml pipipipi");
+//         }
+//     };
+
+//     xhr.send(new FormData(formCrear))
+// }
+
+function equis() {
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'upload.php', true);
+    const formCrear = document.getElementById('formCrear'); // Reemplaza 'tuFormulario' con el ID correcto de tu formulario
+
+    xhr.open('POST', 'assets/servidor/upload.php', true);
+
     xhr.onload = function () {
         if (xhr.status === 200) {
-            const respuesta = JSON.parse(xhr.responseText);
-            const rutaGuardada = respuesta.rutaImagen;
-            publicarFoto(rutaGuardada);
+            try {
+                console.log( xhr.responseText);
+                // const respuesta = JSON.parse(xhr.responseText);
+                // const rutaGuardada = respuesta.rutaImagen;
+                // publicarFoto(rutaGuardada);
+            } catch (error) {
+                console.log("Error al parsear la respuesta JSON:", error);
+            }
+        } 
+        else if (xhr.status === 404){
+            console.log("error :/");
         }
-        else{
-            console.log("error xhml pipipipi");
+        else {
+            console.log("Error en la solicitud XMLHttpRequest:", xhr.status);
         }
     };
 
-    xhr.send(new FormData(formCrear))
+    xhr.onerror = function () {
+        console.log("Error de red al realizar la solicitud XMLHttpRequest");
+    };
+
+    const formData = new FormData(formCrear);
+
+    xhr.send(formData);
 }
 
 
