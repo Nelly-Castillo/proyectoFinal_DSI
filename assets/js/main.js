@@ -161,6 +161,8 @@ function publicarFoto(urlFoto){
         </div> -->
     </div>
     `;
+
+    
     containerFeed.appendChild(publicacion);
 
 }
@@ -233,3 +235,5 @@ function funcionesPublicar(){
 //     }
 //   }
   
+
+// para que las fotos se pongan en el perfil

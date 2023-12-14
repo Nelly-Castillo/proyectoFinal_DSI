@@ -23,3 +23,34 @@ function seguidoSeguir(evento){
 function cerrarSdos(){
     contenedorSeguidos.style.display="none";
 }
+
+// pa poner las fotos en el perfil
+
+function obtenerNombresImagenes() {
+    fetch('imgGaleria.php').then(response => response.json()).catch(error => 
+		{
+            console.error('Error de los nombres de img', error);
+            return [];
+        });
+}
+
+document.addEventListener("load", () => {
+	obtenerNombresImagenes().then(nombresImagenes => {
+        nombresImagenes.forEach(nombre => {
+			const boxImg = document.getElementsByClassName("box-img");
+
+			const galPerfil = document.createElement("div");
+			galPerfil.classList.add("gal-perfil");
+			const imagenP = document.createElement("img");
+
+			const rutaImagen = 'assets/servidor/assets' + nombre;
+			imagenP.src = rutaImagen;
+	
+			boxImg.appendChild(galPerfil);
+			galPerfil.appendChild(imagenP);
+            
+        });
+    });
+
+});
+
