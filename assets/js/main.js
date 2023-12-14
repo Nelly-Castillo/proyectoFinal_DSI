@@ -165,6 +165,8 @@ function publicarFoto(urlFoto){
         <div id="list-Comentarios"></div>
     </div>
     `;
+
+    
     containerFeed.appendChild(publicacion);
 
 }
@@ -237,3 +239,5 @@ function funcionesPublicar(){
 //     }
 //   }
   
+
+// para que las fotos se pongan en el perfil
