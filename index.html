@@ -132,7 +132,7 @@
                     </div>
                     <div class="comentarios">
                         <div class="boxdecomentarios">
-                            <input type="text" class="boxcomentarios" id="newComentario" placeholder="Añade un comentario...">
+                            <input type="text" class="boxcomentarios" class="newComentario" placeholder="Añade un comentario...">
                             <button type="button" class="btn btn-light" id="btn" onclick="addComentario()">Añadir</button>
                         </div>
                         <div id="list-Comentarios"></div>
@@ -213,12 +213,10 @@
             <div class="line"></div>
             <div class="preview">
                 <img id="notFound" src="assets/img/previewFotopng.png">
-                <form id="formCrear" action="upload.php" method="post" enctype="multipart/form-data">
-                    <!-- <input type="file" name="subir-archivo" id="subir-archivo" multiple/> -->
-                    <!-- <input id="input-b1" name="input-b1" type="file" class="file" data-browse-on-zone-click="true"> -->
+                <form id="formCrear" name="formUpload" action="upload.php" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="formFile" class="form-label"> Arrastra las fotos aquí</label>
-                        <input class="form-control" type="file" id="formFile">
+                        <input id="subir-archivo" class="form-control" type="file" id="formFile" name="subir-archivo">
                     </div> 
                 </form>
             </div>

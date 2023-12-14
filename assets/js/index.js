@@ -12,7 +12,7 @@ function darLike(evento){
 
 // comentarios
 function addComentario() {
-    var nuevoComentario = document.getElementById('newComentario').value;
+    var nuevoComentario = document.getElementsByClassName('newComentario').value;
 
     if (nuevoComentario.trim() === '') {
         alert('Por favor, ingresa un comentario válido.');
